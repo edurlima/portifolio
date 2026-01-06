@@ -1,0 +1,52 @@
+/* src/app/jogos/jogos.component.css */
+.jogos-container {
+    padding: 30px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-color); /* Linha Neon */
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.jogo-card {
+    background-color: white;
+    border: 1px solid var(--accent-color); /* Borda Rosa Suave */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.jogo-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-color); /* Borda Neon */
+    box-shadow: var(--futuristic-glow); /* Brilho Neon */
+}
+
+.jogo-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.jogo-card strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.jogo-card p {
+    color: var(--text-color);
+    line-height: 1.4;
+}

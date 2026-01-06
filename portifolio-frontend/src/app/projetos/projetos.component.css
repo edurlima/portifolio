@@ -1,0 +1,21 @@
+/* src/app/projetos/projetos.component.css */
+.projetos-container {
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    margin-top: 25px;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+    font-size: 1.8em;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.6;
+}

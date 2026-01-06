@@ -1,0 +1,46 @@
+<div class="contato-container">
+    <h2>Entre em Contato</h2>
+    
+    <form (ngSubmit)="enviarMensagem()">
+        
+        <div class="form-group">
+            <label for="nome">Seu Nome:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome"
+                [(ngModel)]="dadosContato.nome"
+                required
+            >
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Seu Melhor E-mail:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                [(ngModel)]="dadosContato.email"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="mensagem">Sua Mensagem:</label>
+            <textarea 
+                id="mensagem" 
+                name="mensagem"
+                rows="5"
+                [(ngModel)]="dadosContato.mensagem"
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit" [disabled]="enviando || !dadosContato.nome || !dadosContato.email || !dadosContato.mensagem">
+            {{ enviando ? 'Enviando...' : 'Enviar Mensagem' }}
+        </button>
+    </form>
+    
+    <p *ngIf="statusMensagem" class="status-message" [ngClass]="{'success': statusMensagem.startsWith('✅'), 'error': statusMensagem.startsWith('❌')}">{{ statusMensagem }}</p>
+
+</div>

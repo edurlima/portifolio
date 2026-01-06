@@ -1,0 +1,45 @@
+<header>
+  <nav>
+    <a [routerLink]="['/home']">Home</a>
+    <a [routerLink]="['/projetos']">Projetos</a>
+    <a [routerLink]="['/jogos']">Jogos</a>
+  </nav>
+</header>
+
+<main>
+  
+  <router-outlet></router-outlet>
+  
+  <div *ngIf="apresentacaoData" class="apresentacao-layout">
+    
+    <div class="perfil-info">
+      <div class="perfil-foto">
+        <img src="assets/images/eduarda_perfil.jpg" alt="Eduarda Lima, a professional portrait photo with a friendly and approachable expression">
+      </div>
+      
+      <h1>{{ apresentacaoData.titulo }}</h1>
+      <h2>Olá, eu sou a {{ apresentacaoData.nome }}</h2>
+      
+      <app-mascot-dialog></app-mascot-dialog>
+    </div>
+
+    <div class="apresentacao-texto">
+      
+      <p class="apresentacao-mensagem">
+        {{ apresentacaoData.mensagem }}
+      </p>
+
+      <div class="links-sociais">
+        <h3>Conecte-se:</h3>
+        <a href="https://github.com/edurlima" target="_blank" class="btn-link">GitHub (edurlima)</a>
+        <a href="#" target="_blank" class="btn-link">LinkedIn</a>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div *ngIf="mensagemErro">
+    <p style="color: red;">{{ mensagemErro }}</p>
+  </div>
+
+</main>

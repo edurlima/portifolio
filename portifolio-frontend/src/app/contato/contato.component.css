@@ -1,0 +1,97 @@
+/* src/app/contato/contato.component.css */
+
+.contato-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--accent-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+    box-shadow: var(--futuristic-glow);
+}
+
+button[type="submit"]:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.status-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.status-message.success {
+    background-color: #e6ffe6;
+    color: green;
+    border: 1px solid green;
+}
+
+.status-message.error {
+    background-color: #ffe6e6;
+    color: red;
+    border: 1px solid red;
+}

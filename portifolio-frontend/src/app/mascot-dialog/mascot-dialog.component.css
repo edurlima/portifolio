@@ -1,0 +1,39 @@
+/* src/app/mascot-dialog/mascot-dialog.component.css */
+.mascot-container {
+    padding: 20px;
+    border: 2px solid var(--accent-color); /* Borda Rosa */
+    border-radius: 25px; /* Bordas Super Arredondadas (Fofo) */
+    margin-top: 30px;
+    background-color: #fff0f5; /* Fundo Rosa Claro */
+    box-shadow: var(--card-shadow);
+}
+
+.mascot-dialog p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px; /* Bordas Arredondadas */
+    border: 1px solid var(--accent-color);
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.language-selector button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px; /* Botões arredondados */
+    transition: background-color 0.3s;
+}
+
+.language-selector button:hover:not(:disabled) {
+    background-color: var(--secondary-color); /* Efeito Neon ao passar o mouse */
+    box-shadow: var(--futuristic-glow);
+}
+
+.language-selector button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}

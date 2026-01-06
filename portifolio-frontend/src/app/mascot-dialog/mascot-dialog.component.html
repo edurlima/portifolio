@@ -1,0 +1,26 @@
+<div class="mascot-container">
+  
+  <div class="mascot-dialog">
+    <p>{{ mensagem }}</p>
+  </div>
+  
+  <div class="language-selector">
+    <h4>Selecione o Idioma:</h4>
+    
+    <button (click)="mudarIdioma('pt')" [disabled]="idiomaAtual === 'pt'">
+      🇧🇷 Português (Duda)
+    </button>
+    
+    <button (click)="mudarIdioma('en')" [disabled]="idiomaAtual === 'en'">
+      🇺🇸 English (Lyra)
+    </button>
+    
+    <button (click)="mudarIdioma('es')" [disabled]="idiomaAtual === 'es'">
+      🇪🇸 Español (Dulce)
+    </button>
+    
+    <button (click)="mudarIdioma('zh')" [disabled]="idiomaAtual === 'zh'">
+      🇨🇳 中文 (Mei)
+    </button>
+  </div>
+</div>

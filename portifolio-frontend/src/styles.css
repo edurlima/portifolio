@@ -1,0 +1,50 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Share+Tech+Mono&display=swap');
+
+/* Adiciona o comportamento de scroll suave (smooth scroll) */
+html {
+    scroll-behavior: smooth; 
+}
+
+:root {
+    /* Cores Suaves e Futuristas */
+    --primary-color: #8A2BE2; /* Azul Violeta (Romântico/Futurista) */
+    --secondary-color: #00FFFF; /* Ciano/Turquesa Neon (Futurista) */
+    --accent-color: #FFC0CB; /* Rosa Bebê (Fofo/Romântico) */
+    --background-color: #f7f9fc; /* Fundo muito claro, quase branco */
+    --text-color: #333;
+    --futuristic-glow: 0 0 10px rgba(0, 255, 255, 0.5); /* Efeito Neon */
+    --card-shadow: 0 8px 16px rgba(138, 43, 226, 0.1); /* Sombra Violeta Suave */
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e suave */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Share Tech Mono', monospace; /* Fonte tecnológica/futurista */
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--accent-color); /* Toque fofo */
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-shadow: var(--futuristic-glow);
+}
+
+/* Container principal para centralizar o conteúdo */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    border-top: 1px solid var(--accent-color);
+}
